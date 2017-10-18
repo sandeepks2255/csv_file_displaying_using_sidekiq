@@ -1,0 +1,7 @@
+<%= form_tag csvs_import_path, multipart: true do %>
+	
+	Upload File:
+  <%= file_field_tag :fileupload %>
+
+  <%= submit_tag :submit, class: "btn btn-primary" %>
+<% end %>

@@ -1,0 +1,18 @@
+
+<h1>content of file </h1>
+
+<%= will_paginate @content %>
+<table>
+  <tr>
+  <th> NAME </th>
+  <th> EMAIL </th>
+  </tr>
+  <% @content.each do |row| %>
+    <tr>
+      <td><%=row.name  %></td>
+
+      <td><%=row.email  %></td>
+    </tr>
+  <% end %> 
+</table>
+<%= will_paginate @content %>
